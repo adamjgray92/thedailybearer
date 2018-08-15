@@ -1,0 +1,25 @@
+.page-footer{
+  background-color: $black;
+  color: $white;
+}
+
+.page-footer--links{
+  border-top: 1px solid $white;
+  ul{
+    margin: 0;
+    li{
+      display: inline-block;
+    }
+  }
+  a.to-top{
+    background-color: $darker;
+    color: $white;
+    padding: 1.5em 2em;
+  }
+}
+
+.page-footer--links-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}

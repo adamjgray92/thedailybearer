@@ -1,0 +1,55 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+
+// Variables
+@import 'reset';
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Components
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
+
+html, body{
+  height: 100%;
+}
+
+html{
+  /* Basic settings */
+  font-family: $font-family-sans-serif;
+  font-size: 62.5%;
+
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+body{
+  background-color: $grey;
+}
+
+#app.app{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.page-content{
+  flex: 1 0 auto;
+}
+
+.page-footer{
+  flex-shrink: 0;
+}
+

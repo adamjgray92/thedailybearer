@@ -1,0 +1,58 @@
+.page-header{
+  background-color: $black;
+  color: $white;
+  font-size: 1.6rem;
+}
+
+.header--top-bar{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header--heading{
+  align-items: center;
+  display: flex;
+  strong{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-right: 3em;
+  }
+  span{
+    color: darken($white, 20%);
+    font-size: .85em;
+  }
+}
+
+.header--top-bar-links{
+  display: flex;
+  font-size: .8em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li{
+    a{
+      color: $white;
+      padding: .9em 1em;
+    }
+    a.facebook{
+      &:hover{
+        background-color: $facebook-color;
+      }
+    }
+    a.twitter{
+      &:hover{
+        background-color: $twitter-color;
+      }
+    }
+    a.youtube{
+      &:hover{
+        background-color: $youtube-color;
+      }
+    }
+  }
+}
