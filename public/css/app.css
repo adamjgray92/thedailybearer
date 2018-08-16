@@ -10807,6 +10807,15 @@ a.text-dark:focus {
   color: #F7F7F7;
 }
 
+.page-footer a {
+  color: inherit;
+}
+
+.page-footer a:hover {
+  color: #F91628;
+  text-decoration: none;
+}
+
 .page-footer--links {
   border-top: 1px solid #F7F7F7;
 }
@@ -10817,12 +10826,21 @@ a.text-dark:focus {
 
 .page-footer--links ul li {
   display: inline-block;
+  margin-right: 1em;
+}
+
+.page-footer--links ul li:last-child {
+  margin-right: 0;
 }
 
 .page-footer--links a.to-top {
   background-color: #343333;
   color: #F7F7F7;
   padding: 1.5em 2em;
+}
+
+.page-footer--links a.to-top:hover {
+  background-color: #272727;
 }
 
 .page-footer--links-container {

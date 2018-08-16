@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('/', 'ArticleController@index')->name('home');
+Route::get('/news/{id}/{slug}', 'ArticleController@show')->name('news.show');
+
 Route::get('/tags/{name?}', 'TagController@index')->where('name', '[A-Za-z0-9]+')->name('tag');
 
 Route::group(['as' => 'admin.', 'prefix' => 'admin'], function(){
@@ -20,6 +23,8 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin'], function(){
 });
 
 
+
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');

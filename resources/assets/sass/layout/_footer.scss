@@ -1,6 +1,13 @@
 .page-footer{
   background-color: $black;
   color: $white;
+  a{
+    color: inherit;
+    &:hover{
+      color: $red;
+      text-decoration: none;
+    }
+  }
 }
 
 .page-footer--links{
@@ -9,12 +16,19 @@
     margin: 0;
     li{
       display: inline-block;
+      margin-right: 1em;
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
   a.to-top{
     background-color: $darker;
     color: $white;
     padding: 1.5em 2em;
+    &:hover{
+      background-color: darken($darker, 5%);
+    }
   }
 }
 

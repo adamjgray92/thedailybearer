@@ -37,11 +37,11 @@
               <div class="page-navigation--nav">
                 <a class="page-logo" href="#"><h1>The Daily Bearer</h1></a>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Podcasts</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Authors</a></li>
+                  <li><a href="<?= route('home'); ?>" rel="canonical">Home</a></li>
+                  <li><a href="<?= route('home'); ?>" rel="canonical">News</a></li>
+                  <li><a href="#" rel="canonical">Podcasts</a></li>
+                  <li><a href="#" rel="canonical">Events</a></li>
+                  <li><a href="#" rel="canonical">Authors</a></li>
                 </ul>
               </div>
       
@@ -66,7 +66,7 @@
         <div class="page-footer--links">
           <div class="page-footer--links-container container">
             <small>&copy; 2018 The Daily Bearer. Created By <a href="#" rel="author" target="_blank">Adam Gray</a></small>
-            <nav>
+            <nav >
               <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">News</a></li>
@@ -75,7 +75,7 @@
                 <li><a href="#">Authors</a></li>
               </ul>
             </nav>
-            <a class="to-top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+            <a class="to-top" href="#" title="Back to top" ><i class="fas fa-long-arrow-alt-up"></i></a>
           </div>
         </div>
         
