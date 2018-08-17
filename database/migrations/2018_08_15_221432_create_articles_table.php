@@ -22,6 +22,7 @@ class CreateArticlesTable extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->longText('body');
+            $table->string('image_path');
             $table->boolean('published');
             $table->softDeletes();
             $table->timestamps();

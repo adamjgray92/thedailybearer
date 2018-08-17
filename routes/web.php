@@ -22,6 +22,10 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin'], function(){
     });
 });
 
+Route::group(['as' => 'authors.', 'prefix' => 'authors'], function(){
+    Route::get('/{$name}', 'AuthorController@index')->name('profile');
+});
+
 
 
 
