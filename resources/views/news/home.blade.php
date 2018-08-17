@@ -19,6 +19,7 @@
                 </div>
               </article>
             <?php endforeach; ?>
+            <?= $articles->links() ?>
           </div>
           <div class="col-md-4">
             <h2>Hot News</h2>
